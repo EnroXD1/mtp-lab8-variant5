@@ -9,6 +9,9 @@ readme = "README.md"
 requires-python = ">=3.11,<4"
 dependencies = ["httpx>=0.28.1,<0.29"]
 
+[project.scripts]
+mtp-title = "lab8.cli:main"
+
 [tool.poetry]
 requires-poetry = ">=2.2,<3"
 packages = [{include = "lab8", from = "src"}]
