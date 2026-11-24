@@ -1,0 +1,21 @@
+[project]
+name = "mtp-lab8-variant5"
+version = "0.1.0"
+description = "Предложение заголовка для черновика статьи"
+authors = [
+    {name = "Дерябин Илья Игоревич"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4"
+dependencies = []
+
+[tool.poetry]
+requires-poetry = ">=2.2,<3"
+packages = [{include = "lab8", from = "src"}]
+
+[dependency-groups]
+dev = ["pytest>=8.4,<10", "flake8>=7,<8"]
+
+[build-system]
+requires = ["poetry-core==2.2.1"]
+build-backend = "poetry.core.masonry.api"
